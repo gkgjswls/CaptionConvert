@@ -86,7 +86,7 @@ def sep_filepath(lst):
 
 def clear():
     Videolist_file.delete(first=0,last=Videolist_file.size())
-    Captionlist_file.delete(first=0,last=Videolist_file.size())
+    Captionlist_file.delete(first=0,last=Captionlist_file.size())
     inform.Videoname.clear
     inform.Captionname.clear
 
@@ -94,18 +94,18 @@ def clear():
 def start():
     
     if notiCenter() == True:
-            video_fullfilename = sep_filepath(inform.Videoname)
+            Video_fullfilename = sep_filepath(inform.Videoname)
             Caption_fullfilename = sep_filepath(inform.Captionname)
-
+            count = 0
             
-            for i in range(0,len(video_fullfilename)):
-                count = 0
-                if video_fullfilename[i] != Caption_fullfilename[i]:
+            for i in range(0,len(Video_fullfilename)):
+                
+    
+                if Video_fullfilename[i] != Caption_fullfilename[i]:
                     Path(inform.Captionname[i]).replace(str(Path(inform.Videoname[i]).parent/Path(inform.Videoname[i]).stem) + Path(inform.Captionname[i]).suffix)
                     #progressbar
                     p_var.set(len(inform.Captionname[i])/len(inform.Captionname)*100)
                     count += 1
-                   
                     if count == len(inform.Captionname):
                         msgbox.showinfo("완료","변환 완료")
                         sf(Path(inform.Videoname[i]).parent)

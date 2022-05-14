@@ -1,5 +1,5 @@
 # CaptionConverter
-자막파일이 동영상이름과 같지않아서 불편하진적이 있으신가요?
+자막파일이 동영상이름과 같지않아서 불편하셨던적이 있으신가요?
 하나 하나 이름 바꾸지말고 한번에 바꿔보세요 !!
 
 ![main](https://user-images.githubusercontent.com/98737467/168440322-b0a993ff-aafa-482a-8ba7-66625c844042.JPG)

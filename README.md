@@ -1,4 +1,4 @@
-# CaptionConvert
+# CaptionConverter
 자막파일이 동영상이름과 같지않아서 불편하진적이 있으신가요?
 하나 하나 이름 바꾸지말고 한번에 바꿔보세요 !!
 
